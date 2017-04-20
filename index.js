@@ -6,7 +6,7 @@ var path=require('path');
 // var websocket=require('ws').Server;
 //este modulo es para websocket express
 var w=require('express-ws')(app);
-var consulta=require('./bd');
+//var consulta=require('./bd');
 var url=require('url');
 // var ws=new websocket({port : process.env.PORT || 1027});
 var bodyparser=require("body-parser");
