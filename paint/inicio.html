@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Paint-Javier</title>
+	<script type="text/javascript">
+		var nombre=prompt("Escribe tu nombre");
+	</script>
+	<script type="text/javascript" src="ws.js"></script>
+	<script type="text/javascript" src="canvas.js"></script>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	
+</head>
+<body onload="cargarcontenido()">
+
+<canvas id="contenedor">
+	
+tu navegador no admite canvas
+</canvas>
+
+<div id="opciones">
+	<div id="contiene">
+		<span id="ps">COlORES :</span>
+		<br>
+
+		<div class="coldiv menu" onclick="guardar();"><img src="imagenes/guardar.jpg" ></div>
+
+		<div class="coldiv menu" onclick="limpiar()"><img src="imagenes/limpiar.jpg" ></div>
+
+		<div class="coldiv menu" id="oculto" style="display: none;" onclick="ocultarmoldes(this)"><img src="imagenes/ocultar.png" ></div>
+		<div id="grabarcanvas" class="coldiv menu" onclick="grabar(this)"><img src="imagenes/grabar.png" ></div>
+		<div id="parargrabacion" class="coldiv menu ocultar" onclick="parar(this)"><img src="imagenes/parar.png" ></div>
+        <div id="reproducircanvas" class="coldiv menu ocultar" onclick="reproducir(this)"><img src="imagenes/play.jpg" ></div>
+        <div id="enviartodos" class="coldiv menu ocultar" onclick="enviaratodos(this)" style="display: none;" ><img src="imagenes/enviar.jpg" ></div>
+
+        <br>
+		<br clear="all">
+		<div id="col">
+			<div class="coldiv" onclick="cambiar('red')" style="background: red"></div>
+			<div class="coldiv" onclick="cambiar('blue')" style="background: blue"></div>
+			<div class="coldiv" onclick="cambiar('green')" style="background: green"></div>
+			<div class="coldiv" onclick="cambiar('silver')" style="background: silver"></div>
+			<div class="coldiv" onclick="cambiar('purple')" style="background: purple"></div>
+			<div class="coldiv" onclick="cambiar('yellow')" style="background: yellow"></div>
+			<div class="coldiv" onclick="cambiar('black')" style="background: black"></div>
+			<div class="coldiv" onclick="cambiar('gold')" style="background: gold"></div>
+			<div class="coldiv" onclick="cambiar('#DEAF21')" style="background: #DEAF21"></div>
+			<div class="coldiv" onclick="cambiar('#0FF0E2')" style="background: #0FF0E2"></div>
+			<div class="coldiv" onclick="cambiar('#3C6DC3')" style="background: #3C6DC3"></div>
+			<div class="coldiv" onclick="cambiar('#CD324D')" style="background: #CD324D"></div>
+			<div class="coldiv" onclick="cambiar('#27D870')" style="background: #27D870"></div>
+			<div class="coldiv" onclick="cambiar('#AAD9D8')" style="background: #AAD9D8"></div>
+			<div class="coldiv" onclick="cambiar('#7B4931')" style="background: #7B4931"></div>
+			<div class="coldiv" onclick="cambiar('#2EF9EC')" style="background: #2EF9EC"></div>
+			<div class="coldiv" onclick="cambiar('#12830E')" style="background: #12830E"></div>
+		</div>
+		<span>MOLDES : </span>
+		<br clear="all">
+		<div id="animals">
+			<div class="coldiv as" onclick="ponermoldes(0)"><img src="imagenes/perrito-logo.jpg" width="25" height="25"></div>
+			<div class="coldiv as" onclick="ponermoldes(1)"><img src="imagenes/tortuga-logo.png" width="25" height="25"></div>
+			
+            </div>
+           <span>TAMAÑO lAPIZ</span>
+          <br clear="all">
+          <div id="tam">
+          	
+        
+          <div class="coldiv num" onclick="_tamlapiz(1)"><img src="imagenes/uno-logo.png"></div>
+          <div class="coldiv num" onclick="_tamlapiz(2)"><img src="imagenes/dos-logo.png"></div>
+          <div class="coldiv num" onclick="_tamlapiz(3)"><img src="imagenes/tres-logo.png"></div>
+          <div class="coldiv num" onclick="_tamlapiz(4)"><img src="imagenes/cuatro-logo.png"></div>
+          <div class="coldiv num" onclick="_tamlapiz(5)"><img src="imagenes/cinco-logo.png"></div>
+          <div class="coldiv num" onclick="_tamlapiz(6)"><img src="imagenes/seis-logo.png"></div>
+          <div class="coldiv num" onclick="_tamlapiz(7)"><img src="imagenes/siete-logo.png"></div>
+          <div class="coldiv num" onclick="_tamlapiz(8)"><img src="imagenes/ocho-logo.png"></div>
+          <div class="coldiv num" onclick="_tamlapiz(9)"><img src="imagenes/nueve-logo.png"></div>
+          <div class="coldiv num" onclick="_tamlapiz(10)"><img src="imagenes/diez-logo.png"></div>
+
+
+              </div>
+
+		</div>
+
+
+
+</div>	
+</body>
+</html>

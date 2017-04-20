@@ -1,0 +1,74 @@
+body {
+margin:0;
+overflow-y: hidden;
+overflow-x: hidden;
+
+}
+
+#contenedor {
+
+
+cursor:crosshair;
+float: left;
+z-index: -4;
+}
+
+
+#opciones {
+width: 220px;
+height: 300px;
+background: rgba(12,52,53,0.5);
+position: absolute;
+top:150px;
+left: 120px;
+cursor:move;
+padding: 10px;
+border-radius: 5px;
+z-index: 4;
+user-select: none;
+
+
+}
+
+#opciones #col .coldiv {
+     width: 25px;
+     height: 25px;
+     cursor :pointer;
+display: inline-block;
+margin-left: 4px;
+	}
+
+	#animals .as {
+		width: 30px;
+		height: 26px;
+		display: inline-block;
+		cursor: pointer;
+	}
+	#tam img {
+ width: 25px;
+    height: 25px;
+
+	}
+	#tam .num {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-left: 2px;
+    cursor:pointer;
+
+	}
+
+	#opciones #contiene .menu {
+		margin-left: 5px;
+		cursor:pointer;
+		float:right;
+	}
+	#opciones #contiene .menu img{
+		width: 25px;
+		height: 25px;
+		float: right;
+	}
+
+	#opciones #contiene .ocultar{
+		display: none;
+	

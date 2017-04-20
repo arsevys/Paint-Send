@@ -1,0 +1,25 @@
+{
+  "name": "paintsend",
+  "version": "0.0.1",
+  "description": "Pagina para enviar mensajes personalisados",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "websockets",
+    "canvas"
+  ],
+  "author": "reaper",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "consolidate": "^0.14.5",
+    "express": "^4.15.2",
+    "express-ws": "^3.0.0",
+    "mongoose": "^4.9.5",
+    "mustache": "^2.3.0",
+    "path": "^0.12.7",
+    "ws": "^2.2.3"
+  }
+}
